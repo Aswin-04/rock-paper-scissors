@@ -5,7 +5,33 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+   <script>
+    // create a getComputerChoice() Which randomly return either "Rock", "Paper" or "Scissor"
+    function getComputerChoice() {
+        let randomNum = Math.floor(Math.random() * 3);
+
+        switch(randomNum) {
+
+            case 0:
+                return "rock"
+            
+            case 1:
+                return "paper"
+            
+            default:
+                return "scissor"
+        }
+
+    }
+    // create a playRound() which takes two parameters the playerSelection and the computerSelection
+    // that should return the string that declares the winner of the round
+    function playRound() {
+
+    }
+
+    // create a new function game() that uses the previous function inside of this function to play
+    // a 5 round game
+   </script> 
     
 </body>
 </html>
