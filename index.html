@@ -21,17 +21,45 @@
             default:
                 return "scissor"
         }
-
     }
+
+    
     // create a playRound() which takes two parameters the playerSelection and the computerSelection
     // that should return the string that declares the winner of the round
-    function playRound() {
+    function playRound(computerSelection, playerSelection) {
+        if (computerSelection == playerSelection) {
+            return "Oops... Its a tie"
+            
+        } else if(playerSelection == "paper" && computerSelection == "rock") {
+            return "You won!! paper beats rock"
+            
+        } else if (playerSelection == "rock" && computerSelection == "scissor") {
+            return "You won!! rock beats scissor"
+            
+        } else if (playerSelection == "scissor" && computerSelection == "paper") {
+            return "You won!! scissor beats paper"
+            
+        } else if (computerSelection == "scissor" && playerSelection == "paper") {
+            return "You lost! scissor beats paper"
+            
+        } else if (computerSelection == "paper" && playerSelection == "rock") {
+            return "You lost! paper beats rock"
+            
+        } else if (computerSelection == "rock" && playerSelection == "scissor") {
+            return "you lost! rock beats scissor"
 
+        } else {
+            return "Invalid input"
+        }
     }
+    
+    let computerSelection = getComputerChoice();
+    
+    let playerSelection = prompt("Choose one (rock, paper, scissor)").toLowerCase();
 
     // create a new function game() that uses the previous function inside of this function to play
     // a 5 round game
-   </script> 
+    </script> 
     
 </body>
 </html>
