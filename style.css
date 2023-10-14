@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    height: 200px;
+    font-size: 100px;
+    font-family: sans-serif;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    height: 400px;
+}
+.item {
+    border-radius: 2px;
+}
+
+img.item {
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+
+.container-2 {
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5em;
+}
+
+
+.result {
+    height: 128px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding-right: 50px;
+}
+.footer {
+    height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: lightgrey;
+    color: black;
+    gap: 20px;
+}
+
+.github {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+img.github-logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
