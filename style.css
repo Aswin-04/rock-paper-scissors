@@ -40,6 +40,10 @@ body {
     border-radius: 2rem;
 }
 
+.img-item:hover {
+    transform: scale(1.1);
+}
+
 .container-2 {
     font-size: 40px;
     height: 100px;
